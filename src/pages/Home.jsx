@@ -4,6 +4,7 @@ import IframePlayer from '../components/IframePlayer';
 import ChannelCard from '../components/ChannelCard';
 import NewsSection from '../components/NewsSection';
 import Navbar from '../components/Navbar';
+import ClubWorldCup from './ClubWorldCup';
 
 export default function Home() {
   const [selectedChannel, setSelectedChannel] = useState(channels[0]);
@@ -39,6 +40,7 @@ export default function Home() {
       )}
 
       {activeTab === "news" && <NewsSection />}
+      {activeTab === "clubworldcup" && <ClubWorldCup />}
     </div>
   );
 }

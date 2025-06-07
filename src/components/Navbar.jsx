@@ -22,6 +22,12 @@ export default function Navbar({ activeTab, setActiveTab }) {
           >
             Știri
           </button>
+          <button
+            onClick={() => setActiveTab("clubworldcup")}
+            className={`px-4 py-2 rounded ${activeTab === "clubworldcup" ? "bg-zinc-700" : "bg-zinc-800 hover:bg-zinc-700"}`}
+          >
+            Club World Cup
+          </button>
         </div>
       )}
     </div>
